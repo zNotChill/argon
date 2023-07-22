@@ -4,8 +4,8 @@ const fs = require("fs");
 const appDataPath =
   process.env.APPDATA ||
   (process.platform === "darwin"
-    ? process.env.HOME + "/Library/Preferences"
-    : process.env.HOME + "/argon-app");
+    ? "~/Library/Preferences"
+    : "~/argon-app");
 
 const appDataDir = appDataPath + "/argon";
 const cacheDataDir = appDataPath + "/argon/cache";
