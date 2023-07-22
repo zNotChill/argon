@@ -19,15 +19,10 @@ A compiled version is not currently available, however if you know how to compil
 By default, there are six major game launchers built in; albeit without the file paths:
 
 - Steam
-
 - Epic Games
-
 - Uplay (Ubisoft)
-
 - Origin
-
 - Battle.net
-
 - Riot Games
 
 ## How to add more
