@@ -34,8 +34,11 @@ function toggleSettings() {
       <div>
     `;
   } else {
-    qs(".settings-wrapper").style.display = "none";
-    qs(".settings-wrapper").style.visibility = "hidden";
+    qs(".settings-wrapper").querySelector(".settings").classList.add("settings-fade");
+    setTimeout(() => {
+      qs(".settings-wrapper").style.display = "none";
+      qs(".settings-wrapper").style.visibility = "hidden";
+    }, 500);
 
   }
 }

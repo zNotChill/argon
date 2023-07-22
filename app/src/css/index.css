@@ -170,10 +170,10 @@ span.button.invert:hover {
   overflow: hidden;
   z-index: 10000;
 
-  animation: slideUp 1s ease-in-out forwards;
+  animation: slideUp 0.5s ease-in-out forwards;
 }
 .settings.settings-fade {
-  animation: slideDown 0.5s ease-in-out forwards;
+  animation: slideDown 0.5s backwards;
 }
 
 .settings::before {
