@@ -1,0 +1,27 @@
+<div class="header">
+  <div class="left-hang area">
+    <div class="header-title" title="<%- app.version %>">
+      argon
+    </div>
+
+    <div class="apps">
+      <% app.store.installations.forEach((app, i) => { %>
+        <% if (i < 6) { %>
+          <div class="app-container" click title="<%- app.name %>" app-name="<%- app.name %>" app-path="<%- app.path %>" app-id="<%- app.id %>" app-color="<%- app.color %>">
+            <%- app.name %>
+          </div>
+        <% } %>
+      <% }) %>
+    </div>
+  </div>
+  <div class="right-hang area">
+    <div class="buttons">
+      <span class="button close-window" onclick="toggleSettings()">
+        Settings
+      </span>
+      <span class="button close-window" onclick="window.close()">
+        X
+      </span>
+    </div>
+  </div>
+</div>
