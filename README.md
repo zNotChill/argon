@@ -3,7 +3,6 @@
 
 <p align="center">
   <img src="https://forthebadge.com/images/featured/featured-built-with-love.svg" width="200">
-  <img src="https://forthebadge.com/images/badges/works-on-my-machine.svg" width="200">
   <img src="https://forthebadge.com/images/badges/0-percent-optimized.svg" width="200">
 </p>
 
