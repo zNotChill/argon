@@ -1,9 +1,11 @@
 
 # Argon
 
-![Built with Love](https://forthebadge.com/images/featured/featured-built-with-love.svg)
-![Works on my Machine](https://forthebadge.com/images/badges/works-on-my-machine.svg)
-![0% Optimized](https://forthebadge.com/images/badges/0-percent-optimized.svg)
+<p align="center">
+  <img src="https://forthebadge.com/images/featured/featured-built-with-love.svg">
+  <img src="https://forthebadge.com/images/badges/works-on-my-machine.svg">
+  <img src="https://forthebadge.com/images/badges/0-percent-optimized.svg">
+</p>
 
 [![CodeFactor](https://www.codefactor.io/repository/github/znotchill/argon/badge)](https://www.codefactor.io/repository/github/znotchill/argon)
 
