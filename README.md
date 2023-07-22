@@ -2,9 +2,9 @@
 # Argon
 
 <p align="center">
-  <img src="https://forthebadge.com/images/featured/featured-built-with-love.svg">
-  <img src="https://forthebadge.com/images/badges/works-on-my-machine.svg">
-  <img src="https://forthebadge.com/images/badges/0-percent-optimized.svg">
+  <img src="https://forthebadge.com/images/featured/featured-built-with-love.svg" width="200">
+  <img src="https://forthebadge.com/images/badges/works-on-my-machine.svg" width="200">
+  <img src="https://forthebadge.com/images/badges/0-percent-optimized.svg" width="200">
 </p>
 
 [![CodeFactor](https://www.codefactor.io/repository/github/znotchill/argon/badge)](https://www.codefactor.io/repository/github/znotchill/argon)
