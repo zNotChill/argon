@@ -1,3 +1,6 @@
+const fs = require("fs");
+const path = require("path");
+
 function createLauncherElement({
   content,
   title,
@@ -37,3 +40,8 @@ document.querySelectorAll(".app-container").forEach(async (el) => {
     });
   });
 });
+
+function findRunningLaunchers() {
+  const runningLaunchers = [];
+  const data = fs
+}
