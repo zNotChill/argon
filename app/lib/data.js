@@ -4,8 +4,8 @@ const fs = require("fs");
 const appDataPath =
   process.env.APPDATA ||
   (process.platform === "darwin"
-    ? process.env.HOME + "/Library/Preferences"
-    : process.env.HOME + "/argon-app");
+    ? "~/Library/Preferences"
+    : "~/argon-app");
 
 const appDataDir = appDataPath + "/argon";
 const cacheDataDir = appDataPath + "/argon/cache";
@@ -60,6 +60,24 @@ const store = {
   ]
 };
 
+const settings = {
+  sounds: {
+    sfx: 100,
+  },
+  test: true,
+}
+
+function updateSettings() {
+
+  var sett = JSON.parse(fs.readFileSync(cacheDataDir + "/settings.json", "utf-8"));
+  var clone = settings;
+  for (const setting in clone) {
+    if(!(setting in sett)) {
+      sett[setting] = clone[setting];
+    }
+  }
+}
+
 function checkRootDir() {
   if (!fs.existsSync(appDataDir)) {
     fs.mkdirSync(appDataDir);
@@ -91,4 +109,9 @@ if (!rootDirExists() || !savedDataExists()) {
   checkSavedData();
 
   saveData();
+}
+if(!fs.existsSync(cacheDataDir + "/settings.json")) {
+  fs.writeFileSync(cacheDataDir + "/settings.json", JSON.stringify(settings, null, 2));
+} else {
+  updateSettings();
 }

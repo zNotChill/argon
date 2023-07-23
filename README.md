@@ -34,3 +34,6 @@ When in the app, only six launchers are shown on the header at a time, this **wi
 | Mac (Darwin) | %HOME%/Library/Preferences/argon/cache/data.json |
 | Linux | %HOME%/argon-app/argon/cache/data.json |
 
+> **Note**
+> Make sure that when adding a path you add two back slashes (e.g: `\` turns into `\\`)
+

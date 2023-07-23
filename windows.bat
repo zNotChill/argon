@@ -1,0 +1,1 @@
+npx electron-packager ./app argon --platform=win32 --arch=x64 --overwrite

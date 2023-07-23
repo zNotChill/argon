@@ -14,5 +14,8 @@
     "ejs-electron": "^2.1.1",
     "pidusage": "^3.0.2",
     "ps-list": "^6.3.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1"
   }
 }

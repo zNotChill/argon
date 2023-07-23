@@ -1,7 +1,4 @@
 
-const fs = require('fs');
-const path = require('path');
-
 var settingsOpen = false;
 
 function toggleSettings() {
