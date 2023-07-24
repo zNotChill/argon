@@ -1,19 +1,27 @@
-const { cacheDataDir } = require("../../lib/data.js");
 
 const sounds = {
-  'click': new Audio('../src/audio/click.wav'),
-  'hovers': new Audio('../src/audio/hover2.wav'),
-  'rightclick': new Audio('../src/audio/rightclick.wav'),
+  'click': document.querySelector("#audio audio.click"),
+  'rightclick': document.querySelector("#audio audio.rightclick"),
 }
 
-var settings = fs.readFileSync(cacheDataDir + "/settings.json", "utf-8");
+var audioPlaying = false;
+var settings = JSON.parse(fs.readFileSync(data.cacheDataDir + "/settings.json", "utf-8"));
 
 function playSound(sound) {
-  qs("#audio").innerHTML = `
-    <audio autoplay>
-      <source volume="${settings.sounds.sfx / 100}" src="${sounds[sound].src}" type="audio/wav">
-    </audio>
-  `;
+
+  const soundEl = qs(`#audio audio[class="${sound}"]`);
+  const source = soundEl.querySelector("source");
+
+  source.volume = settings.sounds.sfx / 100;
+
+  if(!audioPlaying) {
+    soundEl.play();
+    audioPlaying = true;
+  } else {
+    soundEl.pause();
+    soundEl.currentTime = 0;
+    soundEl.play();
+  }
 }
 
 document.querySelectorAll("a, [click], .button").forEach(button => {

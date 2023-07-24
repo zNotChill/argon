@@ -8,14 +8,28 @@
 </head>
 <body>
 
+  <div class="loading-overlay"></div>
+
   <%- include('components/header.ejs') %>
 
   <%- include('components/hero.ejs') %>
 
   <div class="popup-wrapper"></div>
   <div class="settings-wrapper"></div>
-  <span id="audio"></span>
+  <span id="audio">
+    <audio class="click">
+      <source src="../src/audio/click.mp3"></source>
+    </audio>
+    <audio class="rightclick">
+      <source src="../src/audio/rightclick.mp3"></source>
+    </audio>
+  </span>
 </body>
+  <script>
+    const data = require("../lib/data.js");
+    const fs = require("fs");
+    const path = require("path");
+  </script>
   <script src="../src/js/sounds.js"></script>
   <script src="../src/js/index.js"></script>
   <script src="../src/js/launch.js"></script>

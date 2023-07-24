@@ -10,8 +10,8 @@ const appDataPath =
 const appDataDir = appDataPath + "/argon";
 const cacheDataDir = appDataPath + "/argon/cache";
 
-exports.cacheDataDir = appDataDir;
-exports.appDataDir = cacheDataDir;
+exports.cacheDataDir = cacheDataDir;
+exports.appDataDir = appDataDir;
 
 const store = {
   installations: [
