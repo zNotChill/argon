@@ -30,9 +30,9 @@ By default, there are six major game launchers built in; albeit without the file
 When in the app, only six launchers are shown on the header at a time, this **will** be fixed in coming updates.
 | Platform | Path |
 |--|--|
-| Windows | %APPDATA%/Roaming/argon/cache/data.json |
-| Mac (Darwin) | %HOME%/Library/Preferences/argon/cache/data.json |
-| Linux | %HOME%/argon-app/argon/cache/data.json |
+| Windows | %APPDATA%\Roaming\argon\cache\data.json |
+| Mac (Darwin) | ~/Library/Preferences/argon/cache/data.json |
+| Linux | ~/argon-app/argon/cache/data.json |
 
 > **Warning**
 > Make sure that when adding a path you add two back slashes (e.g: `\` turns into `\\`)
