@@ -24,7 +24,32 @@ function playSound(sound) {
   }
 }
 
+const clickFuncs = {
+  settingsToggle: (el) => {
+    if(el.classList.contains("disabled")) return;
+
+    toggleSettings();
+  }
+}
+
 document.querySelectorAll("a, [click], .button").forEach(button => {
-  button.addEventListener("mouseover", () => playSound("rightclick"));
-  button.addEventListener("click", () => playSound("click"));
+  button.addEventListener("mouseover", (e) => {
+    if(!button.classList.contains("disabled")) {
+      playSound("rightclick");
+    } else {
+      e.preventDefault();
+    }
+  });
+  button.addEventListener("click", (e) => {
+    if(!button.classList.contains("disabled")) {
+      playSound("click");
+    } else {
+      // cancel onclick
+
+    }
+  });
+
+  if(button === qs(".button.close-window.js-settings-toggle")) {
+
+  }
 });

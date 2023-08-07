@@ -139,6 +139,12 @@ span.button.invert:hover {
   color: var(--text);
 }
 
+span.button.disabled {
+  background: var(--elements-3);
+  color: var(--text-shadow);
+  cursor: not-allowed;
+}
+
 .loading-overlay {
   position: fixed;
   top: 0;
@@ -207,7 +213,7 @@ span.button.invert:hover {
   animation: slideUp 0.5s ease-in-out forwards;
 }
 .settings.settings-fade {
-  animation: slideDown 0.5s backwards;
+  animation: slideDown 0.5s backwards ease-out;
 }
 
 .settings::before {
